@@ -1,7 +1,7 @@
 <?php
 
 $conn = mysqli_connect(
-    "localhost",
+    "sql202.infinityfree.com",
     "if0_42197882",
     "islamrashid123",
     "if0_42197882_horse_mart"
