@@ -22,12 +22,13 @@ steps:
   - name: Check PHP Syntax
     run: |
       find . -type f -name "*.php" -exec php -l {} \;
-
+```
 
 deploy:
 needs: php-check
 runs-on: ubuntu-latest
 
+```
 steps:
   - name: Checkout Code
     uses: actions/checkout@v4
@@ -41,4 +42,4 @@ steps:
       protocol: ftp
       port: 21
       server-dir: htdocs/
-
+```
