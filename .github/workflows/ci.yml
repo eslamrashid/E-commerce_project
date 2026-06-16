@@ -22,7 +22,7 @@ steps:
   - name: Check PHP Syntax
     run: |
       find . -type f -name "*.php" -exec php -l {} \;
-```
+
 
 deploy:
 needs: php-check
