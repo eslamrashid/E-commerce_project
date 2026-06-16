@@ -191,15 +191,20 @@ http://localhost/HorseMart
 
 ## 📷 Screenshots
 
-Add screenshots of:
+## Screenshots
+### Home page
+![Home page](screenshots/homepage.png)
 
-* Home Page
-* Products Page
-* Shopping Cart
-* Checkout Page
-* Admin Dashboard
 
----
+### Product Page
+![product page](screenshots/products.png)
+
+### Cart Page
+![cart page](screenshots/cart.png)
+
+### checkout page
+![checkout page](screenshots/checkout.png)
+
 
 ## 🔮 Future Improvements
 
