@@ -12,6 +12,8 @@ $result = mysqli_query($conn, "SELECT * FROM products LIMIT 4");
 </head>
 <body>
 
+<!-- Header  -->
+
 <nav>
     <h2>🐎 HorseMart</h2>
 
