@@ -1,0 +1,475 @@
+/* ===================================
+   HORSEMART LUXURY BLACK & GOLD THEME
+=================================== */
+
+:root{
+    --black:#111111;
+    --dark:#1a1a1a;
+    --gold:#D4AF37;
+    --gold-light:#F4D160;
+    --white:#ffffff;
+    --cream:#f9f7f1;
+    --gray:#777;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--cream);
+    color:#222;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+nav{
+    background:linear-gradient(135deg,#000,#1a1a1a);
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+nav h2{
+    color:var(--gold);
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+}
+
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:.4s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url('../images/hero.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:85vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:75px;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.hero p{
+    font-size:22px;
+    max-width:800px;
+}
+
+.hero .btn{
+    margin-top:30px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn,
+.checkout-btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    background:linear-gradient(
+    135deg,
+    var(--gold),
+    var(--gold-light)
+    );
+    color:black;
+    transition:.4s;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover,
+.checkout-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(212,175,55,.35);
+}
+
+/* =====================
+   ABOUT
+===================== */
+
+.about-store{
+    max-width:1100px;
+    margin:80px auto;
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.about-store h2{
+    color:var(--gold);
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+.about-store p{
+    line-height:1.9;
+    color:#555;
+}
+
+/* =====================
+   TITLES
+===================== */
+
+.categories,
+.products{
+    padding:80px 20px;
+}
+
+.categories h2,
+.products h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:45px;
+    color:var(--black);
+}
+
+/* =====================
+   CATEGORY CARDS
+===================== */
+
+.category-boxes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.category{
+    width:320px;
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    transition:.4s;
+    border-top:5px solid var(--gold);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.category:hover{
+    transform:translateY(-12px);
+}
+
+.category a{
+    text-decoration:none;
+    color:#222;
+}
+
+.category h3{
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+.category p{
+    color:#666;
+}
+
+/* =====================
+   PRODUCTS
+===================== */
+
+.product-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.product-card{
+    width:320px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.product-card:hover{
+    transform:translateY(-12px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+.product-card h3{
+    margin-top:20px;
+    color:#111;
+}
+
+.product-card p{
+    color:var(--gold);
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.product-card .btn{
+    width:80%;
+    margin:20px auto;
+}
+
+/* =====================
+   CART
+===================== */
+
+.cart-container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.cart-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.cart-table th{
+    background:var(--black);
+    color:var(--gold);
+    padding:18px;
+}
+
+.cart-table td{
+    padding:18px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+.cart-total{
+    margin-top:20px;
+    text-align:right;
+    font-size:28px;
+    font-weight:bold;
+    color:var(--gold);
+}
+
+/* =====================
+   QUANTITY
+===================== */
+
+.quantity-control,
+.product-quantity{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+
+.qty-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:var(--gold);
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.qty-input{
+    width:70px;
+    height:40px;
+    text-align:center;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+/* =====================
+   FORMS
+===================== */
+
+.checkout-container{
+    max-width:750px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.checkout-container h2{
+    color:var(--gold);
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.checkout-container textarea{
+    height:120px;
+    resize:none;
+}
+
+/* =====================
+   EMPTY CART
+===================== */
+
+.empty-cart{
+    background:white;
+    padding:60px;
+    border-radius:20px;
+    text-align:center;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+    background:var(--black);
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+
+footer p{
+    color:#bbb;
+}
+
+/* =====================
+   ANIMATION
+===================== */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero,
+.product-card,
+.category{
+    animation:fadeIn .8s ease;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .product-card,
+    .category{
+        width:100%;
+        max-width:350px;
+    }
+
+    .about-store{
+        margin:30px 15px;
+        padding:30px;
+    }
+
+    .cart-table{
+        font-size:14px;
+    }
+}
