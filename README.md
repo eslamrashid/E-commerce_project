@@ -1,9 +1,14 @@
 # 🐴 HorseMart – Horse Equipment Online Store
+## Student INFO:
+-Name: Islam rashid hassan
+-Reg Numer:24473/2024
 
 ## 📌 Project Overview
 
 HorseMart is an e-commerce web application designed to provide horse owners and riders with a convenient online platform for purchasing horse equipment. The system allows customers to browse products, manage a shopping cart, place orders, and receive order confirmations. Administrators can manage products and view customer orders through an admin dashboard.
 
+# Store Link:
+https://horsemart.free.nf/
 ---
 
 ## 🎯 Project Objectives
